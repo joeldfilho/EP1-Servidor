@@ -1,4 +1,4 @@
-package com.example.ep1;
+package com.example.ep1servidor;
 
 /**
  * Classe que representa a tarefa que será salva no banco de dados

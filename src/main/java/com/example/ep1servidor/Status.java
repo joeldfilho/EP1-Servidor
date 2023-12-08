@@ -1,4 +1,4 @@
-package com.example.ep1;
+package com.example.ep1servidor;
 
 public enum Status {
     NOVA("nova"),

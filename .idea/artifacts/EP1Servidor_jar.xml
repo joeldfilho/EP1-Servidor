@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EP1Servidor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/EP1Servidor_jar</output-path>
+    <root id="archive" name="EP1Servidor.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="EP1Servidor" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21-ea+24/javafx-base-21-ea+24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21-ea+24/javafx-fxml-21-ea+24-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21-ea+24/javafx-graphics-21-ea+24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/21-ea+24/javafx-base-21-ea+24-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21-ea+24/javafx-controls-21-ea+24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/21-ea+24/javafx-graphics-21-ea+24-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/21-ea+24/javafx-fxml-21-ea+24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/21-ea+24/javafx-controls-21-ea+24-win.jar" path-in-jar="/" />
+      <element id="module-source" name="EP1Servidor" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx-swt.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.base.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.controls.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.fxml.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.graphics.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.media.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.properties" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.swing.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../../../../lib/javafx.web.jar" />
+    </root>
+  </artifact>
+</component>

@@ -1,4 +1,4 @@
-package com.example.ep1;
+package com.example.ep1servidor;
 
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -37,13 +37,11 @@ public class Controller implements Initializable {
     @FXML
     private ScrollPane sp_main;
 
-    private Servidor servidor;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         try{
-            servidor = new Servidor(new ServerSocket(4444));
+            Servidor servidor = new Servidor(new ServerSocket(4444));
         } catch (IOException e){
             e.printStackTrace();
         }
