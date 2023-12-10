@@ -150,6 +150,10 @@ public class Servidor {
         private void apagarTarefa(String[] argumentos) {
             tarefas.remove(Integer.parseInt(argumentos[1]));
             retorno = new StringBuilder("tarefa com o id " + argumentos[1] + " removida");
+            for (TarefaModel tarefa:
+                tarefas) {
+                tarefa.setId(tarefas.indexOf(tarefa));
+            }
         }
 
         /*
