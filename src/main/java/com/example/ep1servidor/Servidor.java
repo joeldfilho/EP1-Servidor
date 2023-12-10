@@ -164,11 +164,11 @@ public class Servidor {
             String responsavel = argumentos[5];
             TarefaModel tarefa = new TarefaModel(idTarefa, nomeTarefa, descricaoTarefa, status, prioridade, responsavel);
             tarefas.remove(idTarefa);
-            if (tarefas.isEmpty()){
+            if (tarefas.isEmpty() || tarefas.size() == idTarefa){
                 tarefas.add(tarefa);
                 retorno = new StringBuilder("tarefa com o id " + idTarefa + " alterada");
             }else {
-                tarefas.set(idTarefa, tarefa);
+                tarefas.add(idTarefa, tarefa);
                 retorno = new StringBuilder("tarefa com o id " + idTarefa + " alterada");
             }
         }
