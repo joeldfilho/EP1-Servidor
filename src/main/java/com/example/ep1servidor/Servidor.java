@@ -160,12 +160,17 @@ public class Servidor {
             String nomeTarefa = argumentos[2];
             String descricaoTarefa = argumentos[3];
             Status status = Status.ANDAMENTO;
-            int prioridade = Integer.getInteger(argumentos[4].replace(" ", ""));
+            int prioridade = Integer.parseInt(argumentos[4].replace(" ", ""));
             String responsavel = argumentos[5];
-            TarefaModel tarefa = new TarefaModel(tarefas.size(), nomeTarefa, descricaoTarefa, status, prioridade, responsavel);
+            TarefaModel tarefa = new TarefaModel(idTarefa, nomeTarefa, descricaoTarefa, status, prioridade, responsavel);
             tarefas.remove(idTarefa);
-            tarefas.set(idTarefa,tarefa);
-            retorno = new StringBuilder("tarefa com o id " + idTarefa + " alterada");
+            if (tarefas.isEmpty()){
+                tarefas.add(tarefa);
+                retorno = new StringBuilder("tarefa com o id " + idTarefa + " alterada");
+            }else {
+                tarefas.set(idTarefa, tarefa);
+                retorno = new StringBuilder("tarefa com o id " + idTarefa + " alterada");
+            }
         }
 
         //A mensagem deve vir no formato "{funcao}, {nome_tarefa}, {descricao}, {prioridade}, {responsavel}"
